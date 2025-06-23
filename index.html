@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Rajdhani&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+    <body>
+        <div id="topbar">
+            <div id="title">
+                <p>NEW QUIZ</p>
+            </div>
+            <form id="question-form">
+                <input id="question" type="text" placeholder="This is a question statement">
+                <button class="add" type="submit">
+                    <span class="fa-stack" style="font-size: 36px;">
+                      <i class="far fa-square fa-stack-1x" style="color: white;"></i>
+                      <i class="fas fa-plus fa-stack-1x" style="color: white; font-size: 20px;"></i>
+                    </span>
+                </button>   
+            </form>
+        </div>
+        <div id="pop-container">
+            <div id="popup">
+                <p id="popup-question" style="font-size: 32px; height: 70px;width: 906px; display: flex; align-items: center; margin: 0;">Q: This is the question statement.</p>
+                <form id="option-1" style="margin: 0;">    
+                    <div id="option1" class="option">
+                        <input name="option" id="option-text1" type="text" placeholder="Add Option 1">
+                        <button id="add1" class="add" type="submit">
+                            <span class="fa-stack" style="font-size: 36px;">
+                              <i class="far fa-square fa-stack-1x" style="color: white;"></i>
+                              <i class="fas fa-plus fa-stack-1x" style="color: white; font-size: 20px;"></i>
+                            </span>
+                        </button>
+                    </div>
+                </form>
+                <form id="option-2" style="margin: 0;">  
+                    <div id="option2">
+                        <input name="option" id="option-text2" type="text" placeholder="Add Option 2">
+                        <button id="add2" class="add" type="submit">
+                            <span class="fa-stack" style="font-size: 36px;">
+                              <i class="far fa-square fa-stack-1x" style="color: white;"></i>
+                              <i class="fas fa-plus fa-stack-1x" style="color: white; font-size: 20px;"></i>
+                            </span>
+                        </button>
+                    </div>
+                </form>
+                <form id="option-3" style="margin: 0;">  
+                    <div id="option3">
+                        <input name="option" id="option-text3" type="text" placeholder="Add Option 3">
+                        <button id="add3" class="add" type="submit">
+                            <span class="fa-stack" style="font-size: 36px;">
+                              <i class="far fa-square fa-stack-1x" style="color: white;"></i>
+                              <i class="fas fa-plus fa-stack-1x" style="color: white; font-size: 20px;"></i>
+                            </span>
+                        </button>
+                    </div>
+                </form>
+                <form id="option-4" style="margin: 0;">  
+                    <div id="option4">
+                        <input name="option" id="option-text4" type="text" placeholder="Add Option 4">
+                        <button id="add4" class="add" type="submit">
+                            <span class="fa-stack" style="font-size: 36px;">
+                              <i class="far fa-square fa-stack-1x" style="color: white;"></i>
+                              <i class="fas fa-plus fa-stack-1x" style="color: white; font-size: 20px;"></i>
+                            </span>
+                        </button>
+                    </div>
+                </form>
+                <div class="delete">
+                    <i id="edit" class="fa-regular fa-pen-to-square" style="cursor: pointer;"></i>
+                    <i id="delete" class="fa-regular fa-trash-can" style="cursor: pointer;"></i>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
